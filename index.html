@@ -7,39 +7,42 @@
 
     <title>Calculator</title>
 
-    <!-- Scripts -->
-    <script src="./Scripts/functions.js" type="module" defer></script>
-    <script src="./Scripts/main.js" type="module" defer></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="./Style/style.css">
 </head>
 <body>
     <header>
+        Calculator
     </header>
 
     <main>
-        <section id="calc">
-            <div class="display">
-            </div>
-            <div class="numbers">
-                <button>0</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-            </div>
-            <div class="operators">
-                <button>+</button>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
-            </div>
-            <div>
-                <button class="equals">=</button>
+        <section id="calculator">
+            <div id="display"></div>
+            <div class="display_controls">
                 <button class="clear">Clear</button>
+                <button class="delete">Delete</button>
+            </div>
+            <div class="button_container">
+                <div class="numbers">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button class="equals">=</button>
+                    <button>0</button>
+                    <button class="clear">.</button>
+                </div>
+                <div class="operators">
+                    <button>+</button>
+                    <button>-</button>
+                    <button>*</button>
+                    <button>/</button>
+                </div>
             </div>
         </section>
     </main>
