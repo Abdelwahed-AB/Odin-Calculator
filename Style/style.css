@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@500&display=swap');
 @font-face {
     font-family: digital;
     src: url("./fonts/digital-7.ttf");
@@ -17,10 +18,14 @@
     --color-clear-hover: hsl(17, 100%, 60%);
     --color-buttons-hover: hsl(110, 17%, 60%);
 }
+button{
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+}
 
 main{
     display: flex;
-
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +43,14 @@ main{
     height: 15%;
 
     margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
     background-color: var(--color-display);
+
+    font-family: digital;
+    font-size: 2rem;
+    color: #FEF5ED;
 }
 
 .button_container{
