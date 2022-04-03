@@ -54,6 +54,10 @@ operatorBtns.forEach(btn => {
 });
 
 clearBtn.addEventListener("click", ()=>{
+    operation = [];
+    isF = false;
+    cleared = false;
+    display.textContent = "0";
 });
 
 deleteBtn.addEventListener("click", ()=>{
