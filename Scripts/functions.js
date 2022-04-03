@@ -7,7 +7,7 @@ function substract(a, b){
 }
 
 function multiply(a, b){
-    return a * b;
+    return Math.round(a * b * 100) / 100;
 }
 
 function divide(a, b){
@@ -29,4 +29,8 @@ function operate(a, b, operator){
     }
 }
 
-export {add, substract, multiply, divide, operate}
+function isFloat(number){
+    return number % 1 !== 0;
+}
+
+export {add, substract, multiply, divide, operate, isFloat}
